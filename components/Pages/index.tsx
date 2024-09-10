@@ -260,7 +260,7 @@ export async function getServerSideProps(context) {
     role, path, devmod, userip, } = session;
 
 
-    let json = await fetch("https://irmapserver.ir/research/api/weather")
+    let json = await fetch("https://cdn.ituring.ir/research/api/weather")
     let data = await json.json()
     let cc=data.current_condition[0]
     let na=data.nearest_area[0]
